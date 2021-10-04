@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // 2) Создание переменных, спрашивающих бюджет и время
 const money = +prompt("Ваш бюджет на месяц?", ""),
@@ -27,13 +27,25 @@ for (let i = 0; i < 2; i++) {
 /*
 let i = 0;
 while (i < 2) {
-	...
+	let firstQs = prompt("Введите обязательную статью расходов в этом месяце", ""),
+	secondtQs = +prompt("Во сколько обойдется?", "");
+	if (firstQs != "" && typeof (firstQs) == 'string' && firstQs.length < 50 && typeof (secondtQs) == 'number' && !isNaN(secondtQs)) {
+		appData.expenes[firstQs] = secondtQs;
+	} else {
+		i--;
+	}
 	i++;
 }
 
 let i = 0;
 do {
-	...
+	let firstQs = prompt("Введите обязательную статью расходов в этом месяце", ""),
+	secondtQs = +prompt("Во сколько обойдется?", "");
+	if (firstQs != "" && typeof (firstQs) == 'string' && firstQs.length < 50 && typeof (secondtQs) == 'number' && !isNaN(secondtQs)) {
+		appData.expenes[firstQs] = secondtQs;
+	} else {
+		i--;
+	}
 	i++;
 } while (i < 2);
 */
