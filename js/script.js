@@ -18,7 +18,8 @@ const appData = {
 for (let i = 0; i < 2; i++) {
 	let firstQs = prompt("Введите обязательную статью расходов в этом месяце", ""),
 		secondtQs = +prompt("Во сколько обойдется?", "");
-	if (firstQs != "" && typeof (firstQs) == 'string' && firstQs.length < 50 && typeof (secondtQs) == 'number' && !isNaN(secondtQs)) {
+	if (firstQs != "" && typeof (firstQs) == 'string' && firstQs != null &&
+		firstQs.length < 50 && secondtQs != null && !isNaN(secondtQs)) {
 		appData.expenes[firstQs] = secondtQs;
 	} else {
 		i--;
