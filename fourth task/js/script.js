@@ -10,7 +10,6 @@ function start() {
 		money = +prompt("Ваш бюджет на месяц?", "");
 	}
 }
-
 start();
 
 // Объект c необходимыми данным
@@ -36,7 +35,6 @@ function chooseExpenses() {
 		}
 	}
 }
-
 chooseExpenses();
 
 // 2) Вывод бюджета на день
@@ -44,7 +42,6 @@ function detectDayBudget() {
 	appData.moneyPerDay = (appData.budget / 30).toFixed();
 	alert(`Бюджет на месяц - ${appData.moneyPerDay}`);
 }
-
 detectDayBudget();
 
 // 3) Расчет уровня достатка
@@ -59,7 +56,6 @@ function detectLevel() {
 		console.log("Произошла ошибка");
 	}
 }
-
 detectLevel();
 
 // Вывод полученного объекта в консоль для проверки
@@ -74,5 +70,13 @@ function checkSavings() {
 		alert("Доход в месяц с Вашего депозита: " + (appData.mouthIncome).toFixed());
 	}
 }
-
 checkSavings();
+
+// 3) Определение необязательных расходов
+function chooseOptExpenses() {
+	for (let i = 0; i < 2; i++) {
+		let optExpense = prompt("Статья необязательных расходов?", "");
+		appData.optionalExpenses[i] = optExpense;
+	}
+}
+chooseOptExpenses();
