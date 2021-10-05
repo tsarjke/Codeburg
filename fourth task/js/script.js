@@ -1,9 +1,8 @@
 'use strict';
 
+// 2) Создание переменных, спрашивающих бюджет и время
 let money, time;
-
 function start() {
-	// 2) Создание переменных, спрашивающих бюджет и время
 	money = +prompt("Ваш бюджет на месяц?", "");
 	time = +prompt("Введите дату в формате YYYY-MM-DD", "");
 	while (isNaN(money) || money == "" || money == null) {
@@ -19,7 +18,7 @@ const appData = {
 	expenes: {},
 	optionalExpenses: {},
 	income: [],
-	savings: true
+	savings: true,
 };
 
 // Вопросы пользовтелю по 2 раза и запись ответов в объект
