@@ -87,7 +87,7 @@ const appData = {
 		// 2) Перебор массива income с помощью forEach
 		appData.income.forEach(function (item, i) {
 			alert(++i + "- " + item);
-		})
+		});
 	}
 };
 
