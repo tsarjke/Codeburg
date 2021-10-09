@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	let deadline = "2021-11-11";
+	let deadline = "2021-10-11 00:00:00";
 
 	function getTimingRemaining(endtime) {
 		let t = Date.parse(endtime) - Date.parse(new Date()),
@@ -58,16 +58,16 @@ window.addEventListener('DOMContentLoaded', function () {
 			minutes = timer.querySelector(".minutes"),
 			seconds = timer.querySelector(".seconds"),
 			timeInterval = setInterval(updateTimer, 1000);
-		
+
 		function updateTimer() {
 			let t = getTimingRemaining(endtime);
 			if (t.hours < 10) {
-				hours.textContent = ("0"+t.hours).slice(-2);
+				hours.textContent = ("0" + t.hours).slice(-2);
 			} else {
 				hours.textContent = t.hours;
 			}
-			minutes.textContent = ("0"+t.minutes).slice(-2);
-			seconds.textContent = ("0"+t.seconds).slice(-2);
+			minutes.textContent = ("0" + t.minutes).slice(-2);
+			seconds.textContent = ("0" + t.seconds).slice(-2);
 
 			if (t.total <= 0) {
 				clearInterval(timeInterval);
