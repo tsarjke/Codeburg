@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
 
 	let tab = document.querySelectorAll('.info-header-tab'),
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	}
 
 	// По клику на таб сначала срываем весь контент, а потом показываем только тот, который относится к нажатому табу
-	info.addEventListener('click', function (event) {
+	info.addEventListener('click', (event) => {
 		if (event.target && event.target.matches('div.info-header-tab')) {
 			for (let i = 0; i < tab.length; i++) {
 				if (event.target == tab[i]) {
@@ -96,9 +96,9 @@ window.addEventListener('DOMContentLoaded', function () {
 		document.body.style.overflow = "hidden";
 	});
 
-	close.addEventListener("click", function () {
+	close.addEventListener("click", () => {
 		overlay.style.display = "none";
-		this.classList.remove("more-splash");
+		btn.classList.remove("more-splash");
 		document.body.style.overflow = "";
 	});
 });
