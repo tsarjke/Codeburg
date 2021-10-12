@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				hours.textContent = "00";
 			}
 		}
-	}
+	};
 
 	setTimer('timer', deadline);
 
