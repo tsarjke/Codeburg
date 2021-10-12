@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			"hours": hours,
 			"minutes": minutes,
 			"seconds": seconds
-		}
+		};
 	}
 
 	function setTimer(id, endtime) {
