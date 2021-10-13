@@ -240,8 +240,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	persons.addEventListener('change', function () {
 		personsSum = +this.value;
-		total = (daysSum + personsSum) * 4000;
-		place.options[0].selected = true;
+		total = (daysSum + personsSum) * 4000 * place.options[place.selectedIndex].value;;
 
 		if (restDays.value == '' || personsSum == 0) {
 			totalValue.textContent = 0;
@@ -252,8 +251,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	restDays.addEventListener('change', function () {
 		daysSum = +this.value;
-		total = (daysSum + personsSum) * 4000;
-		place.options[0].selected = true;
+		total = (daysSum + personsSum) * 4000 * place.options[place.selectedIndex].value;
 
 		if (persons.value == '' || daysSum == 0) {
 			totalValue.textContent = 0;
@@ -266,8 +264,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		if (persons.value == '' || restDays.value == '') {
 			totalValue.textContent = 0;
 		} else {
-			let temp = total;
-			totalValue.textContent = temp * this.options[this.selectedIndex].value;
+			totalValue.textContent = (daysSum + personsSum) * 4000 * this.options[this.selectedIndex].value;
 		}
 	});
 });
