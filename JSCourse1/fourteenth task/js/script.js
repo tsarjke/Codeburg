@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict';
-	console.log(Promise.prototype);
+
 	let tab = document.querySelectorAll('.info-header-tab'),
 		info = document.querySelector('.info-header'),
 		tabContent = document.querySelectorAll('.info-tabcontent');
@@ -136,13 +136,13 @@ window.addEventListener('DOMContentLoaded', () => {
 			let jsonObj = JSON.stringify(obj);
 
 			function postData(data) {
-				let promise = new Promise(function (resolve, reject) {
+				return new Promise(function (resolve, reject) {
 					let request = new XMLHttpRequest();
 
 					request.open("POST", 'server.php');
 					request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 					request.send(data);
-					
+
 					request.onreadystatechange = () => {
 						if (request.readyState < 4) {
 							resolve();
@@ -153,8 +153,6 @@ window.addEventListener('DOMContentLoaded', () => {
 						}
 					};
 				});
-				console.log(promise);
-				return promise;
 			}
 
 			function clearInput() {
