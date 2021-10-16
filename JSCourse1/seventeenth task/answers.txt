@@ -1,0 +1,4 @@
+Задание 17
+
+Чем можно заменить основную функцию JQuery - $?
+Ответ: elem.querySelectorAll().forEach()
