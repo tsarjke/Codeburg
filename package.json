@@ -1,0 +1,27 @@
+{
+  "name": "JSCourse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"lint": "eslint \".\\JSCourse1\\React\"",
+		"fix": "eslint \".\\JSCourse1\\React\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsarjke/JSCourse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsarjke/JSCourse/issues"
+  },
+  "homepage": "https://github.com/tsarjke/JSCourse#readme",
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-react": "^7.26.1"
+  }
+}
