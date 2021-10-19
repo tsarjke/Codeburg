@@ -20,7 +20,7 @@
 		"react",
 		"babel"
 	],
-	"ignorePatterns": ["/JSCourse1/JS/**"],
+	"ignorePatterns": ["dist*"],
 	"rules": {
 		"no-multiple-empty-lines": "error",
 		"no-unused-vars": [
