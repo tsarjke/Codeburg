@@ -1,4 +1,6 @@
-import Slider from './slider';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./components/App/App";
 
-const sl = new Slider(500, 400, 3);
-sl.whoAmI();
+ReactDOM.render(<App />, document.getElementById("root"));
