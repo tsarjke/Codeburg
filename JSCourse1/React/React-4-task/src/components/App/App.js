@@ -51,22 +51,6 @@ export default class App extends Component {
 		});
 	};
 
-	// addItem(body) {
-	// 	const newItem = {
-	// 		label: body,
-	// 		important: false,
-	// 		id: this.maxId++
-	// 	}
-
-	// 	this.setState(({ data }) => {
-	// 		const newArr = [...data, newItem];
-	// 		console.log(newArr);
-	// 		return {
-	// 			data: newArr
-	// 		}
-	// 	});
-	// }
-
 	render() {
 		const { data } = this.state;
 		return (
