@@ -1,0 +1,20 @@
+.toggle-btn {
+	margin: 0 0 40px 0;
+}
+
+.app {
+	background: blue url('got.jpeg') center center no-repeat;
+	background-size: cover;
+	height: 1000px;
+	overflow-x: hidden;
+}
+
+.wrong-h {
+	margin: 0 0 15px 0;
+	color: #dc3545;
+}
+
+.wrong-h > span {
+	padding: 5px;
+	background: #fff;
+}

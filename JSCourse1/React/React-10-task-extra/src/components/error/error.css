@@ -1,0 +1,20 @@
+.error {
+	background: #fff;
+	max-height: 100vh;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+
+.error img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.error span {
+	position: absolute;
+	top: 35%;
+	left: 22%;
+	color:#fff;
+}
