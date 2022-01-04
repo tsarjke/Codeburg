@@ -12,9 +12,10 @@
     },
     "rules": {
 			"indent": [
-				"error",
+				"error", 
 				"tab"
 			],
+			"no-tabs": 0,
 			"linebreak-style": [
 				"error",
 				"windows"
