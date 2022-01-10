@@ -1,11 +1,9 @@
-const getMaxAbsoluteNumber = (numbersList) => {
-	if (!Array.isArray(numbersList) || !numbersList.length) {
-		return null;
-	}
-	const absNumbersList = numbersList.map(Math.abs);
-	return Math.max(...absNumbersList);
-};
+const multiRound = (num) => [
+	Math.round(num * 100) / 100,
+	Math.floor(num * 100) / 100,
+	Math.ceil(num * 100) / 100,
+	Math.trunc(num * 100) / 100,
+	num.toFixed(2),
+];
 
-console.log(getMaxAbsoluteNumber([-777, 3, -1, 45, -20]));
-console.log(getMaxAbsoluteNumber([]));
-console.log(getMaxAbsoluteNumber(123));
+console.log(multiRound(Math.PI));

@@ -1,13 +1,11 @@
-const copyObj = (obj) => ({ ...obj });
-
-const users = {
-	'John Doe': 19,
-	'Tom': 17,
-	'Bob': 18,
+const getMaxAbsoluteNumber = (numbersList) => {
+	if (!Array.isArray(numbersList) || !numbersList.length) {
+		return null;
+	}
+	const absNumbersList = numbersList.map(Math.abs);
+	return Math.max(...absNumbersList);
 };
 
-const users2 = copyObj(users);
-users2['John Doe'] = 20;
-
-console.log(users['John Doe']);
-console.log(users2['John Doe']);
+console.log(getMaxAbsoluteNumber([-777, 3, -1, 45, -20]));
+console.log(getMaxAbsoluteNumber([]));
+console.log(getMaxAbsoluteNumber(123));
