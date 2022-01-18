@@ -1,6 +1,6 @@
 import { wallet } from './script';
 
-it('should get full name from the object', () => {
+it('should get the max and min value from the array', () => {
 	const resultMax = wallet.getMax();
 	expect(resultMax).toEqual(64);
 

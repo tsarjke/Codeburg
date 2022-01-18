@@ -1,6 +1,6 @@
 import sumOfSquares from './script';
 
-it('should get full name from the object', () => {
+it('should get the sum of the squares of the numbers', () => {
 	const result1 = sumOfSquares(2, 3);
 	expect(result1).toEqual(13);
 

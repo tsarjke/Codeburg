@@ -1,6 +1,6 @@
 import { event } from './script';
 
-it('should get full name from the object', () => {
+it('should get an array with objects which include a message with a user\'s snname and mail ', () => {
 	const result = event.getInvitations();
 	expect(result).toEqual([
 		{
