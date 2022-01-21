@@ -17,7 +17,7 @@
 			],
 			"no-tabs": 0,
 			"linebreak-style": [
-				"error",
+				"warn",
 				"windows"
 			],
 			"quotes": [
