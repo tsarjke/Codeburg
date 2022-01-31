@@ -1,0 +1,28 @@
+html, body {
+	height: 100%;
+}
+
+.counter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.decr, .incr {
+	border: 1px solid black;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: 900;
+	border-radius: 7px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.value {
+	margin: 0 15px;
+	font-size: 30px;
+	user-select: none;
+}
