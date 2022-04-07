@@ -1,4 +1,4 @@
-const getRandomFromTo = (from, to) => Math.round(Math.random() * (to - 1) + from);
+const getRandomFromTo = (from, to) => Math.round(Math.random() * (to - from) + from);
 
 const servers = ['https://server.com/us', 'https://server.com/eu', 'https://server.com/au'];
 
