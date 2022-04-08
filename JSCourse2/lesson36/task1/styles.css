@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.todo-list {
+	display: flex;
+	flex-direction: column;
+	margin-top: 32px;
+	background-color: coral;
+	border-radius: 8px;
+	padding: 8px;
+	max-width: 600px;
+	margin: auto;
+}
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin: auto;
+	width: 100%;
+}
+
+.list__item {
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	background-color: wheat;
+	margin-bottom: 8px;
+	padding: 8px;
+	position: relative;
+}
+
+.list__delete-task-btn {
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	padding: 2px;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%) rotate(45deg);
+	right: 2%;
+}
+
+.list__delete-task-btn:before {
+	content: '+';
+}
+
+.list__item_done {
+	text-decoration: line-through;
+	opacity: 0.7;
+}
+
+.list__item:last-child {
+	margin-bottom: 0;
+}
+
+.list__item-checkbox {
+	margin-right: 8px;
+}
+
+.btn {
+	height: 32px;
+	min-width: 64px;
+	border: 3px solid #ccc;
+	outline: none;
+	cursor: pointer;
+	border-radius: 8px;
+	margin-left: 16px;
+}
+
+.actions {
+	display: flex;
+	margin-bottom: 8px;
+}
+
+.task-input {
+	height: 32px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	flex: 1;
+}
